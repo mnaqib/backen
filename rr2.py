@@ -20,6 +20,7 @@ def check_price(user,headers):
          price=soup.find(id="priceblock_dealprice")
          price=price.get_text()
          converted_price=float(price[8:14])
+         print(converted_price)
          if(converted_price<45000):
              send_mail()
          print(converted_price)
