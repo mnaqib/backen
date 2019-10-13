@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+   <body>
+      <form class="" action="" method=""
+         <p>Enter URL:</p>
+         <p><input id="nm11" type = "URL" name = "nm" /></p>
+         <button id=subm type="button" name="submit" onclick="submits()">Submit</button>
+      </form>
+      <script type="text/javascript">
+        var element=document.getElementById("nm11").value;
+        console.log(element);
+        console.log("hello");
+        const data ={
+          val:element
+        }
+        function submits(){
+        fetch('http://127.0.0.1:5000/',{
+        method:'post',
+      })
+        .then(
+        (res)=>{
+            console.log(res);
+      });
+}
+      </script>
+      <h2>hello</h2>
+   </body>
